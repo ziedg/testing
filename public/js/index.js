@@ -4,6 +4,10 @@ const culc_sequence= () => {
 let seq_str='';
 
     seq_str=process.argv[2]
+    if(!seq_str){
+      console.info('enter a valid input ...');
+      return;
+    }
     sequence=seq_str.split(',');
     
 
@@ -69,4 +73,4 @@ console.log(sequence)
 
 
 
-console.log("max sequence is ", culc_sequence());
+console.log("max sequence is ", culc_sequence()?culc_sequence():" Not valid");
