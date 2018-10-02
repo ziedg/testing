@@ -1,0 +1,17 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server .",
+    "culc": "node ./public/js/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "description": "",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "liveserver": "^0.1.20"
+  }
+}
