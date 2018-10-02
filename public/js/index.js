@@ -19,10 +19,9 @@ while(k < sequence.length)
   k++
 }
 
-console.log(sequence)
 
   //its a function  that culculate the number of one in a sequence
-  const calc_one = (sequence, index) => {
+  const calc_one = (sequence) => {
     let nb = 0;
     let arr = sequence;
 
@@ -41,12 +40,12 @@ console.log(sequence)
   maxLength = 0;
   positionOfMaxLength = 0;
 
-  for (let j = 0; j < sequence.length; j++) {
+  for (let j = 0; j <= sequence.length; j++) {
     for (let i = 0; i < sequence.length; i++) {
       if (sequence[i] === 0) {
         sequence.splice(i, 1, 1);
 
-        let seq_length = calc_one(sequence, j);
+        let seq_length = calc_one(sequence);
         console.log(
           ` length of sequence  ${seq_length}   : at index ${i + step}`
         );
@@ -73,4 +72,5 @@ console.log(sequence)
 
 
 
-console.log("max sequence is ", culc_sequence()?culc_sequence():" Not valid");
+
+console.log("max sequence is ",  culc_sequence());
