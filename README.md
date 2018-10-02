@@ -2,7 +2,7 @@
 
 ### First step..
 npm install (live-server)
-### to access first exercices ..
+### to access first exercice ..
 $ npm start
 
 
